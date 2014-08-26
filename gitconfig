@@ -26,3 +26,5 @@
 	default = current
 [mergetool "fugitive"]
 	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[alias]
+rb = rebase --root -i
