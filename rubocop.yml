@@ -1,0 +1,7 @@
+inherit_from: ../.rubocop.yml
+
+Encoding:
+  Enabled: false
+
+LineLength:
+  Enabled: false

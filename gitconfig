@@ -1,0 +1,28 @@
+[http]
+	proxy = http://localhost:3128
+[https]
+	proxy = http://localhost:3128
+[user]
+	name = Peter Dalinis
+  email = peter@dalinis.com
+  editor = vim
+[github]
+  user = pdalinis
+[diff]
+	tool = vimdiff
+[merge]
+	tool = fugitive
+  renamelimit = 2275
+[difftool]
+	prompt = false
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+  interactive = auto
+[web]
+	browser = links
+[push]
+	default = current
+[mergetool "fugitive"]
+	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
