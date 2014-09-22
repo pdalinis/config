@@ -28,3 +28,4 @@
 	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [alias]
 rb = rebase --root -i
+	pr = !sh -c 'stash pull-request $0'

@@ -6,6 +6,7 @@ export HTTPS_PROXY=http://localhost:3128
 export RSYNC_PROXY=http://localhost:3128
 export GOPATH=~/go
 export GOROOT=/usr/local/go
+export CDPATH=$GOPATH/src/github.com:$GOPATH/src/code.google.com/p:$GOPATH/src/git.nordstrom.net:~/src
 
 # If not running interactively, don't do anything
 #case $- in
@@ -14,7 +15,8 @@ export GOROOT=/usr/local/go
 #esac
 
 #add the .local/bin to path, powerline and other utils are here.
-export PATH=~/src/jukebox/bin:~/.local/bin:/usr/local/bin:/usr/local/go/bin:~/go/src/github.com/mitchellh/gox:$PATH
+export PATH=~/src/jukebox/bin:~/.local/bin:/usr/local/bin:/usr/local/go/bin:~/go/bin:~/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
 
 #force 256 color
 export TERM=xterm-256color
@@ -94,8 +96,11 @@ alias ps='ps axf'
 alias cat='vimcat'
 alias more='vimpager'
 
+alias gocd='cd `go list -f '{{.Dir}}' $1`'
+
 export EDITOR=vim
 
+alias pr_ssi='RBENV_VERSION=system stash-pull-request.rb "Technology Self Service Infrastructure"'
 stty ixany
 stty ixoff -ixon
 stty stop undef
