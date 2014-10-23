@@ -52,6 +52,11 @@
 				<command>pithos</command>
 			</action>
 		</item>
+		<item label="Eclipse">
+			<action name="Execute">
+				<command>/home/peter/eclipse/eclipse</command>
+			</action>
+		</item>
 		<separator/>
 		<menu id="accessories" label="Accessories">
 			<item label="Catfish File Search">

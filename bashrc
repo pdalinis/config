@@ -6,7 +6,7 @@ export HTTPS_PROXY=http://localhost:3128
 export RSYNC_PROXY=http://localhost:3128
 export GOPATH=~/go
 export GOROOT=/usr/local/go
-export CDPATH=$GOPATH/src/github.com:$GOPATH/src/code.google.com/p:$GOPATH/src/git.nordstrom.net:~/src
+#export CDPATH=$GOPATH/src/github.com:$GOPATH/src/code.google.com/p:$GOPATH/src/git.nordstrom.net:~/src
 
 # If not running interactively, don't do anything
 #case $- in
