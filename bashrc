@@ -93,10 +93,11 @@ alias gs='git status -sb'
 alias iotop='sudo iotop -Pao'
 
 alias ps='ps axf'
-alias cat='vimcat'
 alias more='vimpager'
 
 alias gocd='cd `go list -f '{{.Dir}}' $1`'
+
+alias git_clean='git branch --merged master | grep -v master | xargs git branch -d'
 
 export EDITOR=vim
 

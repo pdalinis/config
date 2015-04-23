@@ -57,6 +57,11 @@
 				<command>/home/peter/eclipse/eclipse</command>
 			</action>
 		</item>
+		<item label="Hipchat">
+			<action name="Execute">
+				<command>/usr/bin/hipchat</command>
+			</action>
+		</item>
 		<separator/>
 		<menu id="accessories" label="Accessories">
 			<item label="Catfish File Search">
