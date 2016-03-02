@@ -1,31 +1,31 @@
-[http]
-	proxy = http://localhost:3128
-[https]
-	proxy = http://localhost:3128
 [user]
-	name = Peter Dalinis
+  name = Peter Dalinis
   email = peter@dalinis.com
   editor = vim
 [github]
   user = pdalinis
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 [merge]
-	tool = fugitive
+  tool = fugitive
   renamelimit = 2275
+  conflictstyle = diff3
 [difftool]
-	prompt = false
+  prompt = false
 [color]
-	branch = auto
-	diff = auto
-	status = auto
+  branch = auto
+  diff = auto
+  status = auto
   interactive = auto
 [web]
-	browser = links
+  browser = links
 [push]
-	default = current
+  default = current
 [mergetool "fugitive"]
-	cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [alias]
-rb = rebase --root -i
-	pr = !sh -c 'stash pull-request $0'
+  rb = rebase -i
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
