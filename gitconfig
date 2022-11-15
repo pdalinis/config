@@ -29,3 +29,9 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+[core]
+	excludesfile = /Users/peter/.gitignore
+[init]
+	defaultBranch = main
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
